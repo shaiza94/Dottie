@@ -31,5 +31,6 @@ Test Case 2 - Validation Document for Dottie AI- Pre 3
     
     
     
-    
+Test Case 3 - Validation Document for Dottie AI- Pre 8
+    Login
 

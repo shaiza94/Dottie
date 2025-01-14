@@ -23,8 +23,11 @@ Test Case 1- Validation Document for Dottie AI- Pre 4
 Test Case 2 - Validation Document for Dottie AI- Pre 3
     Login
     Create Doc A
-
-    
+    Create Doc B
+    Create Doc C
+    Create Doc D
+    Create Doc E
+    Create Doc F
     
     
     

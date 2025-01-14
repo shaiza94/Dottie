@@ -316,12 +316,95 @@ Create Doc A
     ClickText     Done                        delay=2s
     VerifyText    Test 0
 
+Create Doc B
+    LaunchApp    Master Documents
+    ClickText    New
+    VerifyText   New Master Document
+    ClickText    Simple    anchor=Select a record type
+    ClickText    Next
+    VerifyText    New Master Document: Simple
+    PickList      *Business Unit    General
+    TypeText      *Document Name    DOC B
+    PickList      *Document Type    Addendum
+    ComboBox      Search Departments...    QA  #The depatment should be on the enviornment//
+    PickList      Is this a Form or Translation?    No    
+    ClickText    Save          anchor=Cancel    partial_match=false
+    VerifyText    Upload Files  
+    UploadFile    Upload Files                   ../Files_To_Upload/Test 1.pdf    delay=5s
+    ClickText     Done                        delay=2s
+    VerifyText    Test 1
 
+Create Doc C
+    LaunchApp    Master Documents
+    ClickText    New
+    VerifyText   New Master Document
+    ClickText    Simple    anchor=Select a record type
+    ClickText    Next
+    VerifyText   New Master Document: Simple
+    PickList     *Business Unit    General
+    TypeText     *Document Name    DOC C
+    PickList     *Document Type    Addendum
+    ComboBox     Search Departments...    QA  #The depatment should be on the enviornment//
+    PickList     Is this a Form or Translation?    No    
+    ClickText    Save          anchor=Cancel    partial_match=false
+    VerifyText   Upload Files  
+    UploadFile   Upload Files                   ../Files_To_Upload/Test 2.pptx    delay=5s
+    ClickText    Done                        delay=2s
+    VerifyText   Test 2
 
+Create Doc D
+    LaunchApp    Master Documents
+    ClickText    New
+    VerifyText   New Master Document
+    ClickText    Simple    anchor=Select a record type
+    ClickText    Next
+    VerifyText   New Master Document: Simple
+    TypeText     *Document Name    DOC D
+    PickList     *Business Unit    General
+    PickList     *Document Type    Addendum
+    ComboBox     Search Departments...    QA  #The depatment should be on the enviornment//
+    PickList     Is this a Form or Translation?    No    
+    ClickText    Save          anchor=Cancel    partial_match=false
+    VerifyText   Upload Files  
+    UploadFile   Upload Files                   ../Files_To_Upload/Test 3.xlsx    delay=5s
+    ClickText    Done                        delay=2s
+    VerifyText   Test 3
 
+Create Doc E
+    LaunchApp    Master Documents
+    ClickText    New
+    VerifyText   New Master Document
+    ClickText    Simple    anchor=Select a record type
+    ClickText    Next
+    VerifyText   New Master Document: Simple
+    TypeText     *Document Name    DOC E
+    PickList     *Business Unit    General
+    PickList     *Document Type    Addendum
+    ComboBox     Search Departments...    QA  #The depatment should be on the enviornment//
+    PickList     Is this a Form or Translation?    No    
+    ClickText    Save          anchor=Cancel    partial_match=false
+    VerifyText   Upload Files  
+    UploadFile   Upload Files                   ../Files_To_Upload/Test 4.csv    delay=5s
+    ClickText    Done                        delay=2s
+    VerifyText   Test 4
 
-
-
+Create Doc F
+    LaunchApp    Master Documents
+    ClickText    New
+    VerifyText   New Master Document
+    ClickText    Simple    anchor=Select a record type
+    ClickText    Next
+    VerifyText   New Master Document: Simple
+    TypeText     *Document Name    DOC F
+    PickList     *Business Unit    General
+    PickList     *Document Type    Addendum
+    ComboBox     Search Departments...    QA  #The depatment should be on the enviornment//
+    PickList     Is this a Form or Translation?    No    
+    ClickText    Save          anchor=Cancel    partial_match=false
+    VerifyText   Upload Files  
+    UploadFile   Upload Files                   ../Files_To_Upload/Test 5.html    delay=5s
+    ClickText    Done                        delay=2s
+    VerifyText   Test 5
 
 
 

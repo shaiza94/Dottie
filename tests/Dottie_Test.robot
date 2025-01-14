@@ -19,6 +19,12 @@ Test Case 1- Validation Document for Dottie AI- Pre 4
     Create CAPA record and relate to Assessment record
     Create Audit record and relate Finding record
     Create Action Item record and Relate Change Control
+
+Test Case 2 - Validation Document for Dottie AI- Pre 3
+    Login
+    Create Doc A
+
+    
     
     
     

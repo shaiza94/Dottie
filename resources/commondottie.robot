@@ -406,6 +406,54 @@ Create Doc F
     ClickText    Done                        delay=2s
     VerifyText   Test 5
 
+Create KBA 1
+    LaunchApp    Knowledge Base Articles
+    VerifyText   Knowledge Base Articles
+    ClickText    New
+    VerifyText   New Knowledge Base Article
+    TypeText     *Knowledge Base Article Name    KBA 1
+    PickList     *Business Unit    General
+    PickList     *Type             FAQs            
+    PickList     *Knowledge Area                 Knowledge Area A   
+    ClickText    Save          anchor=Cancel    partial_match=false
+    VerifyText                 KBA 1            anchor=Knowledge Base Article Name
+    ClickText                  Edit             anchor=Clone Article    partial_match=false
+    MultiPickList    Classification    Classification A
+    MultiPickList    Sub Knowledge Area    Sub Knowledge Area A
+    TypeText    Keywords    Test
+    PickList    Created Source    Department A
+    MultiPickList    Audience              Audience A
+    ClickText    Move selection to Chosen       anchor=Distribution
+    ComboBox     Search People...          ${username_title}
+    ${current_date}=   Get Current Date
+    ${NEXTWEEKDAY}=    Add Time To Date    ${current_date}    7 days    result_format=%d/%m/%Y
+    ${TODAYDATE}       Get Current Date       result_format=%d/%m/%Y
+    TypeText           Expiration Date     ${NEXTWEEKDAY} 
+    TypeText           Last Update         ${NEXTWEEKDAY} 
+    TypeText           Review Date         ${TODAYDATE}
+    ClickText    Save          anchor=Cancel    partial_match=false
+    UploadFile                 Upload Files      ../Files_To_Upload/DS - check 1 - Medical Device.docx    delay=5s      
+    ClickText    Done                        delay=2s
+    VerifyText   DS - check 1 - Medical Device
+    ClickText                  Content Editor             anchor=Clone Article    partial_match=false
+    
+
+
+    
+    
+
+
+
+
+
+
+
+
+    
+
+
+
+
 
 
 

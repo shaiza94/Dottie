@@ -10,10 +10,10 @@ Library                   DateTime
 *** Variables ***
 # IMPORTANT: Please read the readme.txt to understand needed variables and how to handle them!!
 ${BROWSER}                chrome
-${username}               admin@xp53beta25.com
-${password}               Dotbcs00
-${username_title}         Admin Xpress5B25
-${login_url}              https://connect-velocity-5300-dev-ed.scratch.my.salesforce.com            # Salesforce instance. NOTE: Should be overwritten in CRT variables
+${username}               admin@dottie2v51.com.dottiebeta
+${password}               Dotbcs03
+${username_title}         admin dottie2v51
+${login_url}              https://dottie2v51--dottiebeta.sandbox.lightning.force.com            # Salesforce instance. NOTE: Should be overwritten in CRT variables
 ${home_url}               ${login_url}/lightning/page/home
 
 

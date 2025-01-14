@@ -298,6 +298,33 @@ Create Action Item record and Relate Change Control
     ComboBox     Search Change Controls...      CC Record for Action Item                             
     ClickText    Save          anchor=Cancel    partial_match=false
 
+Create Doc A
+    LaunchApp    Master Documents
+    ClickText    New
+    VerifyText    New Master Document
+    ClickText    Simple    anchor=Select a record type
+    ClickText    Next
+    VerifyText    New Master Document: Simple
+    PickList      *Business Unit    General
+    TypeText      *Document Name    DOC A
+    PickList      *Document Type    Addendum
+    ComboBox      Search Departments...    QA  #The depatment should be on the enviornment//
+    PickList      Is this a Form or Translation?    No    
+    ClickText    Save          anchor=Cancel    partial_match=false
+    VerifyText    Upload Files  
+    UploadFile    Upload Files                   ../Files_To_Upload/Test 0.docx    delay=5s
+    ClickText     Done                        delay=2s
+    VerifyText    Test 0
+
+
+
+
+
+
+
+
+
+
 
 Login
     [Documentation]       Login to Salesforce instance. Takes instance_url, username and password as
